@@ -1,0 +1,11 @@
+body{
+    background: transparent url('assets/Braum_0.jpg') 0% 0% no-repeat padding-box;
+}
+
+header{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+#header_container{
+    display: flexbox;
+}
