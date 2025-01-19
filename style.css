@@ -9,3 +9,9 @@ header{
 #header_container{
     display: flexbox;
 }
+
+#fixedContent{
+    position: fixed;
+    top: 50%;
+    left: 3%;
+}
