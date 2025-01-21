@@ -1,16 +1,16 @@
-body{
+body {
     background: transparent url('assets/img/Braum_0.jpg') 0% 0% no-repeat padding-box;
 }
 
-header{
+header {
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
-#header_container{
+#header_container {
     display: flexbox;
 }
 
-#fixedContent{
+#fixedContent {
     position: fixed;
     top: 50%;
     left: 3%;
@@ -18,7 +18,7 @@ header{
 
 .carousel {
     width: 80%;
-    max-width: 600px;
+    max-width: 1200px; /* Largeur étendue pour 4 images */
     overflow: hidden;
     position: relative;
     border: 2px solid #ddd;
@@ -32,7 +32,7 @@ header{
 }
 
 .carousel-item {
-    min-width: 100%;
+    min-width: 25%; /* 25% pour afficher 4 images */
     transition: opacity 0.5s ease;
 }
 
@@ -65,4 +65,3 @@ header{
 .carousel-controls button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
