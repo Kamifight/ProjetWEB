@@ -1,17 +1,1 @@
-body{
-    background: transparent url('assets/img/Braum_0.jpg') 0% 0% no-repeat padding-box;
-}
 
-header{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-}
-
-#header_container{
-    display: flexbox;
-}
-
-#fixedContent{
-    position: fixed;
-    top: 50%;
-    left: 3%;
-}
