@@ -1,5 +1,6 @@
 body {
     background: transparent url('../img/Braum_0.jpg') 0% 0% no-repeat padding-box;
+    font-family: "Albert Sans", serif;
 }
 
 header {
@@ -18,12 +19,12 @@ header {
 
 
 
-.fixedLogos {
+.rightOnHover {
     transition: all 0.5s;
 
 }
 
-.fixedLogos:hover {
+.rightOnHover:hover {
     transform: translateX(10px);
 }
 
@@ -32,11 +33,23 @@ header {
 
 
 footer {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding-top: 40px;
+    padding-left: 5%;
+}
+
+#footer-flexbox{
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+}
+
+#footer-form{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 250px;
 }
 
 .footer-column {
@@ -64,15 +77,13 @@ footer {
     margin-top: 10px;
 }
 
-.phone-email p {
-    margin: 5px 0;
-}
-
-.phone-email button {
-    background-color: #fff;
-    border: 1px solid #000;
+.phone-email button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    border-radius: 10px;
     padding: 5px 10px;
-    cursor: pointer;
 }
 
 .footer-column ul {
@@ -80,11 +91,6 @@ footer {
     padding: 0;
     margin: 0;
 }
-
-.footer-column ul li {
-    margin-bottom: 10px;
-}
-
 .social-media {
     display: flex;
     align-items: center;
@@ -94,33 +100,12 @@ footer {
 
 .social-media span {
     font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
 }
 
 .social-media .red {
     color: red;
-}
-
-.newsletter h4 {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.newsletter form {
-    display: flex;
-    gap: 10px;
-}
-
-.newsletter input {
-    flex: 1;
-    padding: 5px 10px;
-    border: 1px solid #000;
-}
-
-.newsletter button {
-    background-color: #fff;
-    border: 1px solid #000;
-    padding: 5px 10px;
-    cursor: pointer;
 }
 
 .footer-bottom {
@@ -191,4 +176,25 @@ footer {
 
 .carousel-controls button:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.form-email{
+    border: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 20px;
+}
+
+.form-email:focus{
+    outline: none;
+}
+
+.form-button{
+    background-color: transparent;
+
+    outline: none;
+    border: none;
 }
