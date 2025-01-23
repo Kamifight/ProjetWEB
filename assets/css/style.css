@@ -5,10 +5,61 @@ body {
 
 header {
     background: white 0% 0% no-repeat padding-box;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
 }
 
-#header_container {
-    display: flexbox;
+#header-container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+#header-left{
+    display: flex;
+    gap: 7%;
+    
+}
+
+@media (min-width:1000px){
+    #header-left{
+        white-space: nowrap;
+    }
+}
+
+#header-right{
+    display: flex;
+    gap: 20%;
+}
+
+@media (min-width:1000px){
+    #header-right{
+        white-space: nowrap;
+    }
+}
+
+#fancy-yellow-background{
+    background-color: #F4E500;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#header-search-button{
+    padding: 0px 30px;
+    margin-right: 10px;
+}
+
+#sub-header{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+#sub-header p{
+    color: white;
 }
 
 #fixedContent {
@@ -119,6 +170,7 @@ footer {
 
 .carousel {
     width: 100%;
+
     max-width: 1200px;
     overflow: hidden;
     position: relative;
