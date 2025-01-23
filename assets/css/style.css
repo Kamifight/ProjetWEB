@@ -11,7 +11,7 @@ header {
     left: 0%;
 }
 
-#header-container { 
+#header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ header {
 #header-left{
     display: flex;
     gap: 7%;
-    
+
 }
 
 @media (min-width:1000px){
@@ -168,16 +168,19 @@ footer {
     padding-right: 20%;
 }
 
+.red_fond{
+    background : transparent url('../img/Rectangle 36.svg') 0% 0% no-repeat padding-box;
+}
+
 .carousel {
     width: 100%;
-
-    max-width: 1200px;
+    max-width: 1920px;
     overflow: hidden;
     position: relative;
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color:#dac3b4;
+
 }
 
 .carousel-inner {
@@ -199,18 +202,17 @@ footer {
 }
 
 .carousel-item img {
-    width: 100%;
+    width: 80%;
     display: block;
     border-radius: 10px;
 }
 
 .carousel-controls {
-
-    top: 50%;
     width: 100%;
+    max-width: 1920px;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
+
 }
 
 .no-interact{
@@ -248,4 +250,19 @@ footer {
 
     outline: none;
     border: none;
+}
+
+.white-line {
+    border-top: 5px solid white;
+    margin: 10px 0;
+    width: 80%;
+    align-self: center;
+}
+
+.brown_fond{
+    background-color:#dac3b4;
+}
+
+.priority_max{
+    z-index: 15;
 }
