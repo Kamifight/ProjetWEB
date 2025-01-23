@@ -91,3 +91,9 @@ function initializeCarousel(carouselId, prevButtonId = null, nextButtonId = null
 // Initialisation des deux carrousels
 initializeCarousel('first-carousel', 'prev-first', 'next-first');
 initializeCarousel('second-carousel');
+
+ document.addEventListener('wheel', function(event) {
+        if (event.ctrlKey) {
+            event.preventDefault();
+        }
+    }, { passive: false });
