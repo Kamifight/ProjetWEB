@@ -118,7 +118,7 @@ footer {
 }
 
 .carousel {
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     overflow: hidden;
     position: relative;
@@ -134,7 +134,6 @@ footer {
 }
 
 .carousel-item {
-
     transition: opacity 0.5s ease;
 }
 .carousel-split4 {
@@ -154,7 +153,7 @@ footer {
 }
 
 .carousel-controls {
-    position: absolute;
+
     top: 50%;
     width: 100%;
     display: flex;
