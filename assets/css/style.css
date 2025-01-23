@@ -134,8 +134,17 @@ footer {
 }
 
 .carousel-item {
-    min-width: 25%;
+
     transition: opacity 0.5s ease;
+}
+.carousel-split4 {
+    min-width: 25%;
+}
+.carousel-split5 {
+    min-width: 20%;
+}
+.carousel-split6 {
+    min-width: 16.7%;
 }
 
 .carousel-item img {
