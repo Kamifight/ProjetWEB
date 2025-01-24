@@ -19,7 +19,7 @@ function initializeCarousel(carouselId, prevButtonId = null, nextButtonId = null
     // Mise à jour de la position du carrousel
     function updateCarousel() {
         const offset = -currentIndex * (100 / itemsToShow);
-        carouselInner.style.transform = `translateX(${offset}%)`;
+        carouselInner.style.transform = translateX(${offset}%);
     }
 
      // Gestion des boutons de navigation (si disponibles)
@@ -39,7 +39,7 @@ function initializeCarousel(carouselId, prevButtonId = null, nextButtonId = null
     }
 
     // Gestion du drag-and-drop
-    carousel.addEventListener('mousedown', (e) => {
+carousel.addEventListener('mousedown', (e) => {
         isDragging = true;
         startX = e.pageX;
         carousel.classList.add('dragging');
@@ -52,7 +52,7 @@ function initializeCarousel(carouselId, prevButtonId = null, nextButtonId = null
         const walk = x - startX;
         currentTranslate = Math.max(Math.min(prevTranslate + walk, 0), maxDrag);
 
-        carouselInner.style.transform = `translateX(${currentTranslate}px)`;
+        carouselInner.style.transform = translateX(${currentTranslate}px);
     });
 
     carousel.addEventListener('mouseup', () => {
@@ -63,7 +63,7 @@ function initializeCarousel(carouselId, prevButtonId = null, nextButtonId = null
         prevTranslate = currentTranslate;
 
         carouselInner.style.transition = 'transform 0.5s ease';
-        carouselInner.style.transform = `translateX(${currentTranslate}px)`;
+        carouselInner.style.transform = translateX(${currentTranslate}px);
 
         setTimeout(() => carouselInner.style.transition = '', 500);
         carousel.classList.remove('dragging');
@@ -78,7 +78,7 @@ function initializeCarousel(carouselId, prevButtonId = null, nextButtonId = null
             prevTranslate = currentTranslate;
 
             carouselInner.style.transition = 'transform 0.5s ease';
-            carouselInner.style.transform = `translateX(${currentTranslate}px)`;
+            carouselInner.style.transform = translateX(${currentTranslate}px);
 
             setTimeout(() => carouselInner.style.transition = '', 500);
             carousel.classList.remove('dragging');
@@ -91,3 +91,8 @@ function initializeCarousel(carouselId, prevButtonId = null, nextButtonId = null
 // Initialisation des deux carrousels
 initializeCarousel('first-carousel', 'prev-first', 'next-first');
 initializeCarousel('second-carousel');
+document.addEventListener('wheel', function(event) {
+        if (event.ctrlKey) {
+            event.preventDefault();
+        }
+    }, { passive: false });
