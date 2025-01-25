@@ -246,8 +246,7 @@ footer {
     max-width: 1920px;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 
 }
 
@@ -258,6 +257,8 @@ footer {
 
 .carousel-item {
     transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
 }
 .carousel-split4 {
     min-width: 25%;
@@ -269,8 +270,8 @@ footer {
 
 .carousel-item img {
     width: 80%;
-    display: block;
     border-radius: 10px;
+
 }
 
 
@@ -514,4 +515,11 @@ legend{
 
 .space-on-top{
     padding-top:100px;
+}
+.space-on-top-half{
+    padding-top:50px;
+}
+
+.space-on-bottom{
+    padding-bottom:50px;
 }
