@@ -246,7 +246,6 @@ footer {
     max-width: 1920px;
     overflow: hidden;
     position: relative;
-    border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -511,4 +510,8 @@ legend{
     -webkit-text-stroke: 3px black;
     color: #fff;
     margin-left: 30px;
+}
+
+.space-on-top{
+    padding-top:100px;
 }
