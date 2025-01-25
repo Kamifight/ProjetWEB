@@ -186,16 +186,7 @@ footer {
 
 
 
-#carousel-1-above-content-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    justify-self: center;
-    background-color: #EC1C24;
-    padding: 0 7.5%;
-    height: 50px;
-}
+
 
 .white-text{
     font-size: 45px;
@@ -220,17 +211,7 @@ footer {
     font-weight: 700;
 }
 
-.carousel-1-above-content-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    justify-self: center;
-    padding: 0 10%;
-    height: 50px;
-    padding-bottom: 50px;
-    line-height: 38px;
-}
+
 
 .navigation-button{
     background-color: transparent;
@@ -246,8 +227,6 @@ footer {
     max-width: 1920px;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -258,6 +237,8 @@ footer {
 
 .carousel-item {
     transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
 }
 .carousel-split4 {
     min-width: 25%;
@@ -269,8 +250,8 @@ footer {
 
 .carousel-item img {
     width: 80%;
-    display: block;
     border-radius: 10px;
+
 }
 
 
@@ -514,4 +495,8 @@ legend{
 
 .space-on-top{
     padding-top:100px;
+}
+
+.space-on-bottom{
+    padding-bottom:50px;
 }
