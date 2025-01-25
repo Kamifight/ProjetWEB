@@ -97,3 +97,43 @@ initializeCarousel('second-carousel');
             event.preventDefault();
         }
     }, { passive: false });
+
+
+
+
+function cycleImages(imageId, imageArray) {
+    const imageElement = document.getElementById(imageId);
+    const indicator = document.createElement('div');
+    indicator.classList.add('image-indicator');
+    imageElement.parentElement.style.position = 'relative';
+    imageElement.parentElement.appendChild(indicator);
+
+    let currentIndex = 0;
+
+    function updateIndicator() {
+        indicator.innerHTML = '';
+        for (let i = 0; i < imageArray.length; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            if (i === currentIndex) {
+                dot.classList.add('active');
+            }
+            indicator.appendChild(dot);
+        }
+    }
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % imageArray.length;
+        imageElement.src = imageArray[currentIndex];
+        updateIndicator();
+    }, 3000);
+
+    updateIndicator();
+}
+
+const images = [
+    'assets/img/smile1.png',
+    'assets/img/smile2.png',
+    'assets/img/smile3.png'
+];
+cycleImages('image-qui-bouge', images);
