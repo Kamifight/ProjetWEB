@@ -11,6 +11,10 @@ header {
     top: 0%;
     left: 0%;
 }
+img {
+  max-inline-size: 85%;
+  block-size: auto;
+}
 
 #header-container {
     display: flex;
@@ -267,7 +271,6 @@ footer {
 }
 
 #menu-horizontal-1{
-    margin-top: 120px;
     padding: 200px 0;
     display: flex;
     width: 100%;
@@ -341,4 +344,42 @@ footer {
 #menu-horizontal-2 .subcontainer:hover{
     background-color: red;
     transform: translateY(-10px);
+}
+
+table{
+    margin-top: 150px;
+    width : 100%;
+    max-width : 1920px
+}
+
+td:last-child{
+    text-align:right;
+}
+td:first-child{
+    text-align:center;
+}
+
+.sizefull{
+    min-width:90%;
+}
+
+.image-indicator {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 10;
+}
+
+.image-indicator .dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.image-indicator .dot.active {
+    background: white;
 }
