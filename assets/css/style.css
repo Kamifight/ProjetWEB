@@ -81,7 +81,7 @@ img {
 }
 
 .rightOnHover:hover {
-    transform: translateX(10px);
+    transform: scale(0.8) translateX(10px);
 }
 
 
@@ -101,11 +101,11 @@ footer {
     padding: 20px 50px;
 }
 
-#footer-form{
+.email-form{
     display: flex;
     border: 2px solid black;
     border-radius: 30px;
-    width: 250px;
+    width: 50%;
 }
 
 .footer-column {
@@ -173,6 +173,8 @@ footer {
     padding-right: 20%;
 }
 
+
+
 .red_fond{
     background : transparent url('../img/Rectangle 36.svg') 0% 0% no-repeat padding-box;
 }
@@ -237,22 +239,24 @@ footer {
 
 
 
-.form-email{
+.input-email{
     border: none;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    width: 80%;
+    margin-left: 3%;
 }
 
-.form-email:focus{
+.input-email:focus{
     outline: none;
 }
 
 .form-button{
     background-color: transparent;
-
     outline: none;
     border: none;
+    transform: scale(0.8);
 }
 
 .white-line {
@@ -346,6 +350,7 @@ footer {
     transform: translateY(-10px);
 }
 
+
 table{
     margin-top: 150px;
     width : 100%;
@@ -382,4 +387,43 @@ td:first-child{
 
 .image-indicator .dot.active {
     background: white;
+
+
+#fieldset-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #F8DF00;
+    border-radius: 20px; 
+    padding-bottom: 50px;
+}
+
+#fieldset-text{
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+#fieldset-subtext{
+    margin-top: 20px;
+    align-content: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 3px;
+    text-align: center;
+}
+
+legend{
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    -webkit-text-stroke: 3px black;
+    color: #fff;
+    margin-left: 30px;
+
 }
