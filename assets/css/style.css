@@ -336,7 +336,7 @@ footer {
     max-width:1920px;
     align-items: stretch;
     justify-content: center;
-    gap: 8%;
+    gap: 3%;
     background-color: #EC1C24;
 }
 
@@ -389,20 +389,46 @@ footer {
 }
 
 
+#menu-horizontal-2-above-content-1{
+    padding-left: 10%;
+    height: 50px;
+}
+
+#menu-horizontal-2-above-content-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    justify-self: center;
+    height: 50px;
+}
 
 #menu-horizontal-2{
-    margin-top: 200px;
-    padding: 200px 0;
+    padding: 40px 0;
     display: flex;
     width: 100%;
     align-items: stretch;
     justify-content: center;
-    gap: 8%;
+    gap: 3%;
 }
 
 #menu-horizontal-2 .subcontainer:hover{
     background-color: red;
     transform: translateY(-10px);
+}
+
+#menu-horizontal-2-below-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#menu-horizontal-2-below-content-text{
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
 }
 
 
@@ -442,6 +468,12 @@ td:first-child{
 
 .image-indicator .dot.active {
     background: white;
+}
+
+
+#half-bg-color{
+    width: 100%;
+    background: linear-gradient(transparent 50%, #EC1C24 50%);
 }
 
 #fieldset-content{
