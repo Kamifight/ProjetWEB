@@ -81,9 +81,17 @@ img {
 }
 
 .rightOnHover:hover {
-    transform: scale(0.8) translateX(10px);
+    transform: translateX(10px);
 }
 
+.rightOnHoverArrow {
+    transition: all 0.5s;
+
+}
+
+.rightOnHoverArrow:hover {
+    transform: scale(0.8) translateX(10px);
+}
 
 
 
@@ -387,7 +395,7 @@ td:first-child{
 
 .image-indicator .dot.active {
     background: white;
-
+}
 
 #fieldset-content{
     display: flex;
@@ -424,5 +432,4 @@ legend{
     -webkit-text-stroke: 3px black;
     color: #fff;
     margin-left: 30px;
-
 }
