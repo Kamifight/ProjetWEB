@@ -1,3 +1,4 @@
+/* Corps de la page avec fond d'image fixe (effet parallaxe) */
 body {
     background: transparent url('../img/magasin.jpg') 0% 0% no-repeat padding-box;
     background-attachment: fixed;
@@ -10,59 +11,52 @@ body {
     overflow-x: hidden;
 }
 
+/* Style des tables */
+table{
+    margin-top: 150px;
+    width : 100%;
+    max-width : 1920px;
+}
 
+/* Style des images */
 img {
   max-inline-size: 85%;
   block-size: auto;
 }
 
-
-
+/* Contenu fixe positionné à 50% du haut de la page */
 #fixedContent {
     position: fixed;
     top: 50%;
     left: 3%;
 }
 
-
-
+/* Animation d'un effet vers la droite au survol */
 .rightOnHover {
     transition: all 0.5s;
-
 }
 
 .rightOnHover:hover {
     transform: translateX(10px);
 }
 
+/* Animation d'un effet de réduction et translation à droite au survol */
 .rightOnHoverArrow {
     transition: all 0.5s;
-
 }
 
 .rightOnHoverArrow:hover {
     transform: scale(0.8) translateX(10px);
 }
 
-
-
-#carousel-1-above-content-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    justify-self: center;
-    background-color: #EC1C24;
-    padding: 0 7.5%;
-    height: 50px;
-}
-
+/* Style pour faire un texte blanc en grande taille */
 .white-text{
     font-size: 45px;
     font-weight: 900;
     color: white;
 }
 
+/* Style pour faire un texte blanc avec contour et texte transparent */
 .white-text-transparent{
     font-size: 45px;
     font-weight: 900;
@@ -70,6 +64,7 @@ img {
     color: transparent;
 }
 
+/* Style pour faire des boutons blancs avec texte rouge */
 .white-button{
     color: red;
     background-color: white;
@@ -80,69 +75,38 @@ img {
     font-weight: 700;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+/* Animation de l'effet au survol du bouton blanc */
 .white-button:hover {
     transform: scale(1.05);
 }
 
-.carousel-1-above-content-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+/* Ligne blanche décorative avec marge */
+.white-line {
+    border-top: 5px solid white;
+    margin: 10px 0;
     width: 80%;
-    justify-self: center;
-    padding: 0 10%;
-    height: 50px;
-    padding-bottom: 50px;
-    line-height: 38px;
+    align-self: center;
 }
 
+/* Style pour des boutons */
 .navigation-button{
     background-color: transparent;
     border: none;
 }
 
+/* Fond personnalisé avec une image */
 .red_fond{
     background : transparent url('../img/Rectangle 36.svg') 0% 0% no-repeat padding-box;
 }
 
-.carousel {
-    width: 100%;
-    max-width: 1920px;
-    overflow: hidden;
-    position: relative;
-
-
-}
-
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    transition: opacity 0.5s ease;
-    display: flex;
-    justify-content: center;
-}
-.carousel-split4 {
-    min-width: 25%;
-}
-
-.carousel-split6 {
-    min-width: 16.7%;
-}
-
-.carousel-item img {
-    width: 80%;
-    border-radius: 10px;
-
-}
-
-
+/* Empêche les interactions avec l'élément */
 .no-interact{
     pointer-events: none;
 }
 
+/* Désactive la sélection sur l'élément */
 .no-selectable{
     -webkit-user-select: none;
     -webkit-touch-callout: none;
@@ -151,13 +115,7 @@ img {
     user-select: none;
 }
 
-.carousel-controls button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-
-
+/* Style des champs email */
 .input-email{
     border: none;
     padding-top: 15px;
@@ -167,10 +125,12 @@ img {
     margin-left: 3%;
 }
 
+/* Retire le contour du champ email lors du focus */
 .input-email:focus{
     outline: none;
 }
 
+/* Style du bouton dans un formulaire */
 .form-button{
     background-color: transparent;
     outline: none;
@@ -178,32 +138,17 @@ img {
     transform: scale(0.8);
 }
 
-.white-line {
-    border-top: 5px solid white;
-    margin: 10px 0;
-    width: 80%;
-    align-self: center;
-}
-
+/* Fond brun */
 .brown_fond{
     background-color:#dac3b4;
 }
 
+/* Définit un z-index élevé pour prioriser cet élément (le mettre au dessus des autres)*/
 .priority_max{
     z-index: 15;
 }
 
-
-
-
-
-
-table{
-    margin-top: 150px;
-    width : 100%;
-    max-width : 1920px
-}
-
+/* Alignement du texte des colonnes de tableau */
 td:last-child{
     text-align:right;
 }
@@ -215,6 +160,7 @@ td:first-child{
     min-width:90%;
 }
 
+/* Indicateur de position pour les images */
 .image-indicator {
     position: absolute;
     bottom: 10px;
@@ -224,6 +170,7 @@ td:first-child{
     z-index: 10;
 }
 
+/* Styles des points indiquant la position active dans l'indicateur */
 .image-indicator .dot {
     width: 10px;
     height: 10px;
@@ -236,61 +183,22 @@ td:first-child{
     background: white;
 }
 
-
+/* Ajoute un espace au dessus de l'élément */
 .space-on-top{
     padding-top:100px;
 }
+
+/* Ajoute un espace au dessus de l'élément mais moins grand*/
 .space-on-top-half{
     padding-top:50px;
 }
 
+/* Ajoute un espace en dessous de l'élément */
 .space-on-bottom{
     padding-bottom:50px;
 }
 
-.text_on_image_container {
-    display: inline-block;
-    position: relative;
-}
-.text_on_image_container .text {
-    z-index: 1;
-    position: absolute;
-    text-align: left;
-    left: 100;
-    right: 0;
-    top: 55%;
-    width: 70%;
-    font-family: "Arial", sans-serif;
-    font-weight: lighter;
-}
-.text_on_image_container .titre {
-    z-index: 1;
-    position: absolute;
-    text-align: left;
-    left: 100;
-    right: 0;
-    top: 20%;
-    width: 70%;
-    font-family: "Arial", sans-serif;
-}
-.text_on_image_container .lucida_text {
-    font-style: italic; /* Italique */
-    font-family: "Lucida Handwriting", sans-serif;
-}
-.text_on_image_container .blue_text{
-    color: #007BFF;
-}
-.text_on_image_container h3{
-    font-size:30px;
-}
-.text_on_image_container h4{
-    font-size:24px;
-}
-.text_on_image_container .big_text{
-    font-weight: 600;
-    font-size:30px;
-}
-
+/* Style d'un bouton rouge */
 .red-button {
   display: inline-block;
   background-color: #FF0000;
@@ -303,6 +211,7 @@ td:first-child{
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+/* Effet au survol du bouton */
 .red-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
