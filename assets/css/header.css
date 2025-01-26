@@ -1,58 +1,67 @@
 header {
-    background: white 0% 0% no-repeat padding-box;
+    /* Header fixe en haut avec fond blanc */
+    background: white;
     position: fixed;
     width: 100%;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
 }
 
 #header-container {
+    /* Disposition flexible du contenu du header */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 3%;
 }
 
-#header-left{
+#header-left {
+    /* Espacement entre les éléments du côté gauche */
     display: flex;
     gap: 7%;
-
 }
 
-@media (min-width:1000px){
-    #header-left{
+@media (min-width: 1000px) {
+    #header-left {
+        /* Empêche le retour à la ligne sur des écrans plus grands */
         white-space: nowrap;
     }
 }
 
-#header-right{
+#header-right {
+    /* Espacement entre les éléments du côté droit */
     display: flex;
     gap: 3%;
 }
 
-@media (min-width:1000px){
-    #header-right{
+@media (min-width: 1000px) {
+    #header-right {
+        /* Empêche le retour à la ligne sur des écrans plus grands */
         white-space: nowrap;
     }
 }
 
-#fancy-yellow-background{
+#fancy-yellow-background {
+    /* Fond jaune avec arrondi */
     background-color: #F4E500;
     padding: 10px;
     border-radius: 15px;
 }
 
-#header-search-button{
-    padding: 0px 30px;
+#header-search-button {
+    /* Bouton de recherche avec padding */
+    padding: 0 30px;
     margin-right: 10px;
 }
 
-#sub-header{
+#sub-header {
+    /* En-tête secondaire avec fond noir et texte centré */
     display: flex;
     background-color: black;
     justify-content: center;
 }
 
-#sub-header p{
+#sub-header p {
+    /* Couleur du texte de l'en-tête secondaire */
     color: white;
 }

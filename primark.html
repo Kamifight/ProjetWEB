@@ -2,14 +2,21 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+    <!-- Configuration responsive pour mobiles. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- Titre de la page. -->
     <title>Primark</title>
+
+    <!-- Liens vers les fichiers CSS pour les styles de la page. -->
     <link rel="stylesheet" href="assets\css\style.css">
     <link rel="stylesheet" href="assets\css\header.css">
     <link rel="stylesheet" href="assets\css\footer.css">
     <link rel="stylesheet" href="assets\css\menu1.css">
     <link rel="stylesheet" href="assets\css\menu2.css">
     <link rel="stylesheet" href="assets\css\fieldset.css">
+
+    <!-- Préconnexion aux polices Google pour optimiser leur chargement. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -17,37 +24,53 @@
 
 <body>
 <header class="priority_max">
+    <!-- Section d'entête avec une priorité maximale pour la mise en page. -->
     <div id="header-container">
+        <!-- Conteneur principal de l'entête. -->
+
         <div id="header-left">
+            <!-- Zone gauche de l'entête -->
             <img src="assets\img\twitter.png" alt="">
             <h4>Boutiques et Restaurants</h4>
             <h4>Actus & Bons plans</h4>
             <h4>Infos pratiques</h4>
         </div>
+
         <div id="header-right">
+            <!-- Zone droite de l'entête -->
             <h4 id="fancy-yellow-background">OUVERT - 9:30 à 19:30</h4>
             <button id="header-search-button">O</button>
         </div>
     </div>
+
     <div id="sub-header">
+        <!-- Sous-en-tête pour les annonces ou informations spéciales. -->
         <p>Ouverture exceptionnelle le dimanche 12 février pour la Saint-Valentin</p>
     </div>
 </header>
 
 <div class="red_fond space-on-top-half">
     <table>
+        <!-- Utilisation d'une table pour la mise en page -->
         <tr>
-            <td colspan="2"><img id="image-qui-bouge" src="assets/img/smile1.png" alt="slide 1"></td>
-            <td class="text_on_image_container"><img src="assets/img/orange_pull.png" alt="pub fixe">
-                <h3 class="titre"><strong class="blue_text">PRIMARK</strong><br>
+            <td colspan="2"><img id="image-qui-bouge" src="assets/img/smile1.png" alt="slide 1"></td> <!-- Cellule fusionnée sur deux colonnes contenant une image animée. -->
+            <td class="text_on_image_container">
+                <!-- Cellule contenant une image fixe -->
+                <img src="assets/img/orange_pull.png" alt="pub fixe">
+                <h3 class="titre">
+                    <strong class="blue_text">PRIMARK</strong><br>
                     <span class="lucida_text">Mode & déco</span>
-                    </h3><h4 class="text">
+                </h3>
+                <h4 class="text">
                     <span class="big_text"> Évènement </span><br>
                     Primark ouvrira <br>
                     ses portes <br>
                     le 21 Février 2023<br><br>
                     <span class="button-container">
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <button class="red-button">En savoir plus</button></a>
+                        <!-- Bouton rouge -->
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            <button class="red-button">En savoir plus</button>
+                        </a>
                     </span>
                 </h4>
             </td>
@@ -57,31 +80,38 @@
 
 
 <div id="menu-horizontal-1">
+    <!-- Menu horizontal. -->
+
     <div class="subcontainer">
+        <!-- Option "Objets trouvés" -->
         <img src="assets\img\objets.png" alt="menu objets trouves" class="image-blanche">
         <img src="assets\img\objetsRouge.png" alt="menu objets trouves rouge" class="image-rouge">
         <h4>Objets trouvés</h4>
     </div>
 
     <div class="subcontainer">
+        <!-- Option "Accès" -->
         <img src="assets\img\acces.png" alt="menu acces" class="image-blanche">
         <img src="assets\img\accesRouge.png" alt="menu acces rouge" class="image-rouge">
         <h4>Accès</h4>
     </div>
 
     <div class="subcontainer">
+        <!-- Option "Plan du centre" -->
         <img src="assets\img\plan.png" alt="menu plan du centre" class="image-blanche">
         <img src="assets\img\planRouge.png" alt="menu plan du centre rouge" class="image-rouge">
         <h4>Plan du centre</h4>
     </div>
 
     <div class="subcontainer">
+        <!-- Option "Accessibilité" -->
         <img src="assets\img\accessibilite.png" alt="menu accessibilité" class="image-blanche">
         <img src="assets\img\accessibiliteRouge.png" alt="menu accessibilite rouge" class="image-rouge">
         <h4>Accessibilité</h4>
     </div>
 
     <div class="subcontainer">
+        <!-- Option "Plus de services" -->
         <img src="assets\img\services.png" alt="menu plus de services" class="image-blanche">
         <img src="assets\img\servicesRouge.png" alt="menu plus de services rouge" class="image-rouge">
         <h4>Plus de services</h4>
@@ -92,25 +122,34 @@
 
 
 <div id="fixedContent" class="priority_max no-selectable">
+    <!-- Contenu fixe avec des images non sélectionnables. -->
     <img src="assets\img\enmodepartage.png" alt="#enmodepartage"><br>
     <img src="assets\img\facebook.png" alt="logo Facebook" class="rightOnHover"><br>
     <img src="assets\img\twitter.png" alt="logo Twitter" class="rightOnHover">
 </div>
 
-
 <div id="carousel-1-above-content-1">
+    <!-- Zone au-dessus du carousel -->
     <p class="white-text">Actus &</p>
-    <a href="https://www.youtube.com/watch?v=NLPyySN9Czw"><button class="white-button">Toutes les actus & bons plans</button></a>
+    <a href="https://www.youtube.com/watch?v=NLPyySN9Czw">
+        <button class="white-button">Toutes les actus & bons plans</button>
+    </a>
 </div>
 
 <div class="carousel-1-above-content-2 no-selectable red_fond">
+    <!-- Contenu au-dessus du carousel, avec des boutons de navigation. -->
     <p class="white-text-transparent">bons plans</p>
-    <button id="prev-first" class="navigation-button"> <img src="assets/img/8e062b13-5d82-425d-8024-9740ca826d78.png" alt="left"><br></button>
+    <button id="prev-first" class="navigation-button">
+        <img src="assets/img/8e062b13-5d82-425d-8024-9740ca826d78.png" alt="left"><br>
+    </button>
     <hr class="white-line">
-    <button id="next-first" class="navigation-button"> <img src="assets/img/Icon awesome-arrow-left.svg" alt="right"><br></button>
+    <button id="next-first" class="navigation-button">
+        <img src="assets/img/Icon awesome-arrow-left.svg" alt="right"><br>
+    </button>
 </div>
 
 <div id="first-carousel" class="carousel red_fond space-on-bottom">
+    <!-- Carousel d'images avec plusieurs éléments de carrousel. -->
     <div class="carousel-inner no-interact no-selectable">
         <div class="carousel-item carousel-split4">
             <img src="https://www.magic-ville.com/pics/big/sld/376.jpg" alt="Slide 1">
@@ -140,60 +179,78 @@
 </div>
 
 <div id="menu-horizontal-2-above-content-1">
+    <!-- Section au-dessus du menu horizontal avec un texte. -->
     <p class="white-text">Une envie de shopping</p>
 </div>
+
 <div id="menu-horizontal-2-above-content-2">
+    <!-- Section avec un texte supplémentaire et un lien vers toutes les boutiques. -->
     <p class="white-text-transparent">particulière ?</p>
-    <a href="https://www.youtube.com/watch?v=q_5d1Bl8Awc"><button class="white-button">Toutes les boutiques</button></a>
+    <a href="https://www.youtube.com/watch?v=q_5d1Bl8Awc">
+        <button class="white-button">Toutes les boutiques</button>
+    </a>
 </div>
 
 <div id="menu-horizontal-2">
+    <!-- Menu horizontal -->
     <div class="subcontainer">
+        <!-- Catégorie "Maison". -->
         <img src="assets\img\maison.png" alt="menu maison">
         <h4>Maison</h4>
     </div>
 
     <div class="subcontainer">
+        <!-- Catégorie "Restauration". -->
         <img src="assets\img\restauration.png" alt="menu restauration">
         <h4>Restauration</h4>
     </div>
 
     <div class="subcontainer">
+        <!-- Catégorie "Mode & Bijoux". -->
         <img src="assets\img\mode.png" alt="menu mode et bijoux">
         <h4>Mode & bijoux</h4>
     </div>
 
     <div class="subcontainer">
+        <!-- Catégorie "Beauté & Santé". -->
         <img src="assets\img\beaute.png" alt="menu beaute et sante">
         <h4>Beauté & Santé</h4>
     </div>
 
     <div class="subcontainer">
+        <!-- Catégorie "Culture & Loisirs". -->
         <img src="assets\img\culture.png" alt="menu culture et loisirs">
         <h4>Culture & Loisirs</h4>
     </div>
 </div>
 
 <div id="menu-horizontal-2-below-content">
-    <p id="menu-horizontal-2-below-content-text"><span style="font-weight: bold;">Plus de 40 boutiques </span>de mode, beauté, et déco pour dénicher les dernières tendances et se faire plaisir ensemble.</p>
+    <p id="menu-horizontal-2-below-content-text">
+        <span style="font-weight: bold;">Plus de 40 boutiques </span>de mode, beauté, et déco pour dénicher les dernières tendances et se faire plaisir ensemble.
+    </p>
 </div>
 
 <div id="half-bg-color">
+    <!-- Section avec un fond partiel. -->
     <fieldset id="fieldset-content">
+        <!-- Formulaire d'inscription aux infos et bons plans. -->
         <legend>#enmodetips</legend>
         <label id="fieldset-text">Infos & bons plans</label>
         <div class="email-form">
+            <!-- Champ de saisie pour l'email et bouton d'envoi. -->
             <input type="email" placeholder="Votre email" class="input-email">
-            <button type="submit" class="rightOnHoverArrow form-button"><img src="assets\img\fleche.png" alt="fleche noire"></button>
+            <button type="submit" class="rightOnHoverArrow form-button">
+                <img src="assets\img\fleche.png" alt="fleche noire">
+            </button>
         </div>
-        <div id =fieldset-subtext>
+        <div id="fieldset-subtext">
             <p>En renseignant votre adresse e-mail, vous acceptez de recevoir des informations de la part <br>des enseignes et vous prenez connaissance de notre Politique de confidentialité.</p>
         </div>
     </fieldset>
 </div>
 
-
 <div id="second-carousel" class="carousel red_fond space-on-top space-on-bottom">
+    <!-- Deuxième carrousel avec des images. -->
     <div class="carousel-inner no-interact no-selectable">
         <div class="carousel-item carousel-split6">
             <img src="assets/img/2ee0f260-b2b9-4c90-aebc-f017553e84aa.png" alt="Slide 1">
@@ -230,6 +287,7 @@
 
 <footer class="footer">
     <div id="footer-flexbox">
+        <!-- Première colonne du footer -->
         <div class="footer-column">
             <div class="logo">LOGO</div>
             <div class="contact-info">
@@ -241,6 +299,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Deuxième colonne du footer -->
         <div class="footer-column">
             <h4>Nom logo et vous</h4>
             <ul>
@@ -258,6 +318,8 @@
                 <li>Un local</li>
             </ul>
         </div>
+
+        <!-- Troisième colonne du footer -->
         <div class="footer-column">
             <div class="social-media">
                 <img src="assets\img\facebook.png" alt="logo Facebook">
@@ -265,6 +327,7 @@
                 <span>#enmode<span class="red">partage</span></span>
             </div>
             <h4>Infos & bons plans</h4>
+            <!-- Formulaire pour s'inscrire -->
             <form>
                 <div class="email-form">
                     <input type="email" placeholder="Votre email" class="input-email">
@@ -273,6 +336,8 @@
             </form>
         </div>
     </div>
+
+    <!-- Section en bas du footer pour les mentions légales et droits d'auteur -->
     <div class="footer-bottom">
         <p>2023 Logo. Tous droits réservés.</p>
         <p>Mentions légales – Politique de confidentialité</p>
