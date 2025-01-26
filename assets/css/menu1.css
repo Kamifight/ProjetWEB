@@ -1,4 +1,5 @@
 #menu-horizontal-1{
+ /* Configuration générale du menu horizontal */
     padding: 120px 0;
     display: flex;
     width: 100%;
@@ -10,44 +11,52 @@
 }
 
 #menu-horizontal-1 .subcontainer:hover{
+/* Modifications visuelles lors du survol */
     background-color: #ffffff;
     transform: translateY(-10px);
 }
 
 #menu-horizontal-1 .subcontainer:hover h4{
+/* Changer la couleur du texte en rouge lorsque l'utilisateur survole */
     color: red;
 }
 
+/* --- Gestion des images au survol --- */
 .image-rouge{
+/* Masquage de l'image rouge par défaut */
     display: none;
 }
 
 .subcontainer:hover .image-rouge{
+/* Affichage de l'image rouge au survol */
     display: block;
 }
 
 .subcontainer:hover .image-blanche{
+/* Masquage de l'image blanche au survol */
     display: none;
 }
 
 /*Sert aussi au deuxième menu : */
 
-
+/* --- Mise en taille des images dans les sous-conteneurs --- */
 .subcontainer img{
     transform: scale(0.75);
 }
 
+/* --- Style du texte dans les sous-conteneurs --- */
 .subcontainer h4{
     color: white;
 }
 
+/* --- Adaptation du texte pour les écrans larges --- */
 @media (min-width:1000px){
     .subcontainer h4{
         white-space: nowrap;
     }
 }
 
-
+/* --- Style des sous-conteneurs --- */
 .subcontainer{
     display: flex;
     flex-direction: column;

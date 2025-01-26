@@ -1,41 +1,39 @@
-#half-bg-color{
+#half-bg-color {
+    /* Applique un dégradé de fond avec une moitié rouge */
     width: 100%;
     background: linear-gradient(transparent 50%, #EC1C24 50%);
 }
 
-#fieldset-content{
+#fieldset-content {
+    /* Conteneur du formulaire avec un fond jaune et un centrage des éléments */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: none;
     padding: 20px;
     width: 60%;
     margin: 0 auto;
     background-color: #F8DF00;
-    border-radius: 20px; 
-    padding-bottom: 50px;
+    border-radius: 20px;
 }
 
-#fieldset-text{
+#fieldset-text {
+    /* Style du texte principal du formulaire */
     font-size: 35px;
     font-weight: 900;
     margin-bottom: 20px;
 }
 
-#fieldset-subtext{
-    margin-top: 20px;
-    align-content: center;
-    justify-content: center;
+#fieldset-subtext {
+    /* Texte secondaire sous le formulaire */
     font-size: 14px;
     text-align: center;
 }
 
-legend{
+legend {
+    /* Légende du formulaire avec un contour noir et texte blanc */
     font-size: 50px;
     font-weight: 900;
     font-style: italic;
-    -webkit-text-stroke: 3px black;
     color: #fff;
     margin-left: 30px;
 }

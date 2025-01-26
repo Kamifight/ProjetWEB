@@ -1,9 +1,11 @@
-#menu-horizontal-2-above-content-1{
+/* --- Espacement et taille pour la première section du menu horizontal 2 --- */
+#menu-horizontal-2-above-content-1 {
     padding-left: 10%;
     height: 50px;
 }
 
-#menu-horizontal-2-above-content-2{
+/* --- Configuration du layout pour la deuxième section du menu horizontal 2 --- */
+#menu-horizontal-2-above-content-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +14,8 @@
     height: 50px;
 }
 
-#menu-horizontal-2{
+/* --- Configuration générale du menu horizontal 2 --- */
+#menu-horizontal-2 {
     padding: 40px 0;
     display: flex;
     width: 100%;
@@ -21,19 +24,22 @@
     gap: 3%;
 }
 
-#menu-horizontal-2 .subcontainer:hover{
+/* --- Effet de survol sur les sous-conteneurs --- */
+#menu-horizontal-2 .subcontainer:hover {
     background-color: red;
     transform: translateY(-10px);
 }
 
-#menu-horizontal-2-below-content{
+/* --- Mise en forme de la section --- */
+#menu-horizontal-2-below-content {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
 
-#menu-horizontal-2-below-content-text{
+/* --- Style du texte de la section--- */
+#menu-horizontal-2-below-content-text {
     color: white;
     font-size: 20px;
     width: 50%;
