@@ -1,5 +1,8 @@
 body {
     background: transparent url('../img/magasin.jpg') 0% 0% no-repeat padding-box;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     max-width:1920px;
     width: 100%;
     font-family: "Albert Sans", serif;
@@ -218,6 +221,10 @@ footer {
     height: 45px;
     padding: 0 15px;
     font-weight: 700;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.white-button:hover {
+    transform: scale(1.05);
 }
 
 .carousel-1-above-content-2 {
@@ -522,4 +529,63 @@ legend{
 
 .space-on-bottom{
     padding-bottom:50px;
+}
+
+.text_on_image_container {
+    display: inline-block;
+    position: relative;
+}
+.text_on_image_container .text {
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    left: 100;
+    right: 0;
+    top: 55%;
+    width: 70%;
+    font-family: "Arial", sans-serif;
+    font-weight: lighter;
+}
+.text_on_image_container .titre {
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    left: 100;
+    right: 0;
+    top: 20%;
+    width: 70%;
+    font-family: "Arial", sans-serif;
+}
+.text_on_image_container .lucida_text {
+    font-style: italic; /* Italique */
+    font-family: "Lucida Handwriting", sans-serif;
+}
+.text_on_image_container .blue_text{
+    color: #007BFF;
+}
+.text_on_image_container h3{
+    font-size:30px;
+}
+.text_on_image_container h4{
+    font-size:24px;
+}
+.text_on_image_container .big_text{
+    font-weight: 600;
+    font-size:30px;
+}
+
+.red-button {
+  display: inline-block;
+  background-color: #FF0000;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.red-button:hover {
+  transform: scale(1.1);
 }
