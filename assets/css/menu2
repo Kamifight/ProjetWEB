@@ -1,0 +1,41 @@
+#menu-horizontal-2-above-content-1{
+    padding-left: 10%;
+    height: 50px;
+}
+
+#menu-horizontal-2-above-content-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    justify-self: center;
+    height: 50px;
+}
+
+#menu-horizontal-2{
+    padding: 40px 0;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+    gap: 3%;
+}
+
+#menu-horizontal-2 .subcontainer:hover{
+    background-color: red;
+    transform: translateY(-10px);
+}
+
+#menu-horizontal-2-below-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#menu-horizontal-2-below-content-text{
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
