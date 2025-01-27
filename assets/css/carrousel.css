@@ -1,0 +1,66 @@
+/* Conteneur du carrousel */
+.carousel {
+    width: 100%;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Conteneur interne des éléments du carrousel */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Éléments individuels du carrousel */
+.carousel-item {
+    transition: opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style pour 4 éléments visibles */
+.carousel-split4 {
+    min-width: 25%;
+}
+
+/* Style pour 6 éléments visibles */
+.carousel-split6 {
+    min-width: 16.7%;
+}
+
+/* Style des images dans le carrousel */
+.carousel-item img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Effet au survol des boutons de contrôle */
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Contenu au-dessus du carrousel */
+.carousel-1-above-content-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    justify-self: center;
+    padding: 0 10%;
+    height: 50px;
+    padding-bottom: 50px;
+    line-height: 38px;
+}
+
+/* Autre contenu avec fond rouge */
+#carousel-1-above-content-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    justify-self: center;
+    background-color: #EC1C24;
+    padding: 0 7.5%;
+    height: 50px;
+}

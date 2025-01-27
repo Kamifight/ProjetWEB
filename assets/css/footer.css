@@ -1,17 +1,20 @@
 footer {
+    /* Style de base pour le footer avec un fond blanc et une bordure en haut */
     background-color: #fff;
     border-top: 1px solid #ccc;
     padding-top: 40px;
     padding-left: 5%;
 }
 
-#footer-flexbox{
+#footer-flexbox {
+    /* Disposition des colonnes du footer avec un espacement entre elles */
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
 }
 
-.email-form{
+.email-form {
+    /* Style du formulaire d'email avec une bordure noire et un rayon de bordure */
     display: flex;
     border: 2px solid black;
     border-radius: 30px;
@@ -19,31 +22,36 @@ footer {
 }
 
 .footer-column {
+    /* Chaque colonne du footer prend une largeur égale */
     flex: 1;
     padding: 0 20px;
 }
 
 .logo {
+    /* Style du texte du logo */
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.contact-info h4,
-.footer-column h4 {
+.contact-info h4, .footer-column h4 {
+    /* Style des titres des sections */
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .contact-info p {
+    /* Marges pour le texte dans la section contact */
     margin: 10px 0;
 }
 
 .phone-email {
+    /* Espacement des boutons de contact */
     margin-top: 10px;
 }
 
-.phone-email button{
+.phone-email button {
+    /* Style des boutons de contact */
     display: flex;
     align-items: center;
     gap: 5px;
@@ -53,11 +61,14 @@ footer {
 }
 
 .footer-column ul {
+    /* Suppression des puces et des marges/paddings */
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .social-media {
+    /* Disposition des icônes de réseaux sociaux avec un espacement entre elles */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -65,16 +76,19 @@ footer {
 }
 
 .social-media span {
+    /* Style du texte #enmodepartage */
     font-weight: bold;
     font-style: italic;
     font-size: 20px;
 }
 
 .social-media .red {
+    /* Couleur rouge pour la partie 'partage' */
     color: red;
 }
 
 .footer-bottom {
+    /* Style de la ligne de bas de page avec un texte centré et un espacement horizontal */
     display: flex;
     justify-content: space-between;
     text-align: center;
