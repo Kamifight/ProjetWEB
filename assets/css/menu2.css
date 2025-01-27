@@ -2,6 +2,14 @@
 #menu-horizontal-2-above-content-1 {
     padding-left: 10%;
     height: 50px;
+    line-height: 45px;
+}
+
+/* Rendu responsive */
+@media (max-width: 532px) {
+    #menu-horizontal-2-above-content-1{
+        margin-bottom: 65px;
+    }
 }
 
 /* --- Configuration du layout pour la deuxième section du menu horizontal 2 --- */

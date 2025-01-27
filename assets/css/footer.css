@@ -82,6 +82,24 @@ footer {
     font-size: 20px;
 }
 
+.social-media img {
+    /* mouvement des icônes */
+    transition: all 0.2s;
+}
+
+.social-media img:hover {
+    /* mouvement vers le haut des icônes */
+    transform: translateY(-5px);
+}
+
+
+@media (max-width: 870px) {
+    /* Pour le côté responsive garder le texte cosmétique n'était pas une priorité */
+    .social-media span{
+        display: none;
+    }
+}
+
 .social-media .red {
     /* Couleur rouge pour la partie 'partage' */
     color: red;
