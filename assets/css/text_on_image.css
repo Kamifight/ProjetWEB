@@ -42,12 +42,12 @@
 
 /* Taille du texte de h3 */
 .text_on_image_container h3{
-    font-size:30px;
+    font-size:1.7em;
 }
 
 /* Taille du texte de h4 */
 .text_on_image_container h4{
-    font-size:24px;
+    font-size:1.2em;
 }
 
 /* Style pour mettre les textes en gras */

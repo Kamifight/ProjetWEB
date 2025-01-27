@@ -32,8 +32,8 @@
         <!-- Conteneur principal de l'entête. -->
 
         <div id="header-left">
-            <!-- Zone gauche de l'entête -->
-            <img src="assets\img\twitter.png" alt="">
+            <!-- Zone gauche de l'entête, le logo est une image, à moins que le site s'appelle Logo mais dans le doute... -->
+            <img src="assets\img\Logo.jpg" alt="logo du site" id="logo-header">
             <h4>Boutiques et Restaurants</h4>
             <h4>Actus & Bons plans</h4>
             <h4>Infos pratiques</h4>
@@ -42,15 +42,19 @@
         <div id="header-right">
             <!-- Zone droite de l'entête -->
             <h4 id="fancy-yellow-background">OUVERT - 9:30 à 19:30</h4>
-            <button id="header-search-button">O</button>
+            <button id="header-search-button"><img src="assets\img\loupe.png" alt="icone de recherche"></button>
         </div>
     </div>
+
 
     <div id="sub-header">
         <!-- Sous-en-tête pour les annonces ou informations spéciales. -->
         <p>Ouverture exceptionnelle le dimanche 12 février pour la Saint-Valentin</p>
     </div>
 </header>
+
+<!-- Champ de recherche en position absolue -->
+<input type="text" id="research-text" placeholder="Saisissez du texte ici">
 
 
 
@@ -137,9 +141,7 @@
 <div id="carousel-1-above-content-1">
     <!-- Zone au-dessus du carousel -->
     <p class="white-text">Actus &</p>
-    <a href="https://www.youtube.com/watch?v=NLPyySN9Czw">
-        <button class="white-button">Toutes les actus & bons plans</button>
-    </a>
+    <a href="#"><button class="white-button">Toutes les actus & bons plans</button></a>
 </div>
 
 
@@ -198,9 +200,7 @@
 <div id="menu-horizontal-2-above-content-2">
     <!-- Section avec un texte supplémentaire et un lien vers toutes les boutiques. -->
     <p class="white-text-transparent">particulière ?</p>
-    <a href="https://www.youtube.com/watch?v=q_5d1Bl8Awc">
-        <button class="white-button">Toutes les boutiques</button>
-    </a>
+    <a href="#"><button class="white-button">Toutes les boutiques</button></a>
 </div>
 
 <div id="menu-horizontal-2">
@@ -310,8 +310,8 @@
                 <h4>Nom du logo</h4>
                 <p>Toute l'adresse est là<br>ou pas…</p>
                 <div class="phone-email">
-                    <button class="button"><img src="assets\img\telephone.png" alt="icone téléphone"> 01 02 03 04 05</button><br><br>
-                    <button><img src="assets\img\mail.png" alt="icone mail">Par mail</button>
+                    <a href="#"><button class="button"><img src="assets\img\telephone.png" alt="icone téléphone"> 01 02 03 04 05</button></a><br><br>
+                    <a href="#"><button><img src="assets\img\mail.png" alt="icone mail">Par mail</button></a>
                 </div>
             </div>
         </div>

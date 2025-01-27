@@ -1,3 +1,13 @@
+// Fonction qui gère l'affichage du champ de recherche du header
+document.getElementById('header-search-button').addEventListener('click', function() {
+    const inputTexte = document.getElementById('research-text');
+    if (inputTexte.style.display === 'none' || inputTexte.style.display === '') {
+        inputTexte.style.display = 'block';
+    } else {
+        inputTexte.style.display = 'none';
+    }
+});
+
 // Fonction pour initialiser un carrousel avec gestion des boutons de navigation et du glissement (drag)
 function initializeCarousel(carouselId, prevButtonId = null, nextButtonId = null) {
     // Sélectionne les éléments du carrousel, ainsi que les boutons de navigation
